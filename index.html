@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <!-- instead of having `oninput="update()"` inside the main tag, just create an id and call it in your js file -->
+    <main id="container">
+        <h1>Tip Calculator</h1>
+
+        <section>
+            <!-- bill -->
+            <div class="bill">
+                <label for="yourBill">Bill</label>
+                <input type="number" placeholder="Your bill" id="yourBill">
+            </div>
+            <!-- tip percentage -->
+            <div>
+                <div class="space-between">
+                    <label for="tipInput">Select tip</label>
+                    <span id="tipPercent"></span>
+                </div>
+                <input type="range" value="0" id="tipInput">
+            </div>
+            <!-- tip value -->
+            <div class="space-between">
+                <span>Tip</span>
+                <span id="tipValue"></span>
+            </div>
+            <hr>
+            <!-- total -->
+            <div class="space-between total">
+                <span>Total</span>
+                <span id="totalWithTip"></span>
+            </div>
+        </section>
+
+        <section>
+            <!-- split bill -->
+            <div>
+                <div class="space-between">
+                    <label for="splitInput">Split</label>
+                    <span id="splitValue"></span>
+                </div>
+                <input type="range" min="1" max="10" value="1" id="splitInput">
+            </div>         
+            <!-- bill each -->
+            <div class="space-between">
+                <span>Bill each</span>
+                <span id="billEach"></span>
+            </div>
+            <!-- tip each -->
+            <div class="space-between">
+                <span>Tip each</span>
+                <span id="tipEach"></span>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
