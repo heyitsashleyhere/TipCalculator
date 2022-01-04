@@ -1,2 +1,2 @@
 # TipCalculator
-Project exercise from following funJavascriptProjects
+Project exercise from following [funJavascriptProjects](https://fun-javascript-projects.com/)
